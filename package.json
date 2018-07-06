@@ -1,0 +1,47 @@
+{
+  "name": "graphql-osm",
+  "version": "0.0.1",
+  "description": "graphql object to schema mapping",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "node_modules/.bin/nodemon --inspect src/index.ts --watch src/main --exec node_modules/.bin/ts-node src/index.ts",
+    "start": "node_modules/.bin/ts-node src/main/server.ts",
+    "ts:build": "tsc",
+    "clean": "rimraf build",
+    "clean:npm": "rimraf node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pfaze/graphql-osm.git"
+  },
+  "keywords": [
+    "graphql",
+    "apollo",
+    "schema",
+    "mapping"
+  ],
+  "author": "Goran Nikolić <goran.nikolic@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pfaze/graphql-osm/issues"
+  },
+  "homepage": "https://github.com/pfaze/graphql-osm#readme",
+  "devDependencies": {
+    "@types/node": "^10.5.1",
+    "@types/reflect-metadata": "^0.1.0",
+    "@types/winston": "^2.3.9",
+    "nodemon": "^1.17.5",
+    "rimraf": "^2.6.2",
+    "ts-node": "^7.0.0",
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "apollo-server": "^2.0.0-rc.6",
+    "graphql": "^0.13.2",
+    "graphql-tools": "^3.0.4",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "^6.2.1",
+    "ts-simple-ast": "^12.5.0",
+    "winston": "^3.0.0"
+  }
+}
